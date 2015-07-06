@@ -1,5 +1,13 @@
 var service = angular.module('myService', []);
 
+(function(){
+	var vendors = ['webkit', 'moz'];
+	for(var i = 0; i < vendors.length && !window.requestAnimationFrame; i++) {
+		window.requestAnimationFrame = window[vendors[i] + 'RequestAnimationFrame'];
+		window.cancelAnimationFrame = window[vendors[i] + 'CancelAnimationFrame'] || window[vendors[i] + 'CancelRequestAnimationFrame'];
+	}
+})();
+
 service.factory('ysAnimate', function() {
 	return {
 		tween:{
