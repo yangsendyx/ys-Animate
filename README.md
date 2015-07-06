@@ -1,10 +1,6 @@
 ##说明
 
-ys-Animate服务是用tween算法为angular.js封装的一套动画实现，由于ng内置的jq-lite仅支持行间样式的获取，所以引用本服务时，必须先给AngularElm设置初始行间样式
-
-##方法
-
-ys-Animate支持常规属性的动画效果以及transform的动画效果
+ys-Animate服务是用tween算法为angular.js封装的一套动画实现，由于ng内置的jq-lite仅支持行间样式的获取，所以引用本服务时，必须先给AngularElm设置初始行间样式ys-Animate支持常规属性的动画效果以及transform的动画效果
 
 ##用法
 
